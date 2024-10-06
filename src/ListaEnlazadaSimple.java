@@ -5,12 +5,24 @@ public class ListaEnlazadaSimple {
     //Constructores
     public ListaEnlazadaSimple() {
     }
+    //metodo get and set
+    public Nodo getCabeza() {
+
+        return cabeza;
+    }
+
+    public void setCabeza(Nodo cabeza) {
+
+        this.cabeza = cabeza;
+    }
 
     public ListaEnlazadaSimple(Nodo cabeza) {
         this.cabeza = cabeza;
     }
+
     //Elimina toda la lista
     public void eliminar(){
+
         cabeza=null;
     }
     //ingresa un dato al inicio de la lista
@@ -103,14 +115,5 @@ public class ListaEnlazadaSimple {
             aux=aux.getSiguiente();
         }
         System.out.println();
-    }
-
-
-    public Nodo getCabeza() {
-        return cabeza;
-    }
-
-    public void setCabeza(Nodo cabeza) {
-        this.cabeza = cabeza;
     }
 }
